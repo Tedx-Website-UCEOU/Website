@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tedx Osmania</title>
+    <meta charset="utf-8">
+    <!-- bootstrap cdn-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        #myBtn3 {
+            display: none;
+        }
+
+        @media screen and (max-width: 425px) {
+            #more3 {
+                display: none;
+            }
+
+            #myBtn3 {
+                display: inline-block;
+                color: white;
+                background-color: unset;
+                border: solid;
+            }
+        }
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn .popuptext {
+            visibility: hidden;
+            width: 250px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        .btn .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        .btn .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- button functionality(BUY TICKETS)-->
+    <script>
+        function btnFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+
+        function btnFunction2() {
+            var popup2 = document.getElementById("myPopup2");
+            popup2.classList.toggle("show");
+        }
+    </script>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li>
+                    <a class="navbar-brand" style="pointer-events: none" href="">
+                        <img src="images/logo3.jpg" class="logo"
+                            style="height: 68px; width: 200px; margin-left: -50px;">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Gallery/gallery.html">GALLERY</a>
+                </li>
+                <!--<li><a href="../sponsorsss/spon.html">SPONSORS</a></li>-->
+                <li>
+                    <a href="../About.html">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
+                    <a class="navbar-brand" href=""><img src="images/logo1.png" class="logo"
+                            style="height: 68px; width: 300px; margin-left: 15px;">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class='nav navbar-nav navbar-left' style="margin-left: 22em;">
+                        <li><a class="#menu-toggle" id="menu-toggle"><b>2023</b></a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="../Events/events.html">EVENTS</a></li> -->
+                        <li><a href="../homepage/home.html">HOME</a></li>
+                        <li><a href="../Speakers.html">SPEAKERS</a></li>
+                        <li><a href="../sponsorsss/spon.html">SPONSORS</a></li>
+                        <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+                        <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                        <li>
+                            <div class="buy" style="position:relative;-ms-transform: translateY(25%);
+                            transform: translateY(32%) translateX(0%);margin: 0;top: 100%;border-radius: 25px"><button
+                                    id="btnbuy" onclick="btnFunction()">BUY TICKETS</button></div>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+
+
+        <!--page part-->
+        <!--picture slide-->
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <picture>
+                        <img src="images/speaker.png" class="img-responsive, center-block" alt="">
+                    </picture>
+                </div>
+
+                <div class="item ">
+
+                    <img class="img-responsive, center-block" src="images/speaker2.png" alt="">
+
+                </div>
+                <div class="item ">
+
+                    <img class="img-responsive, center-block" src="images/manisha.jpg" alt="">
+
+                </div>
+                <div class="item ">
+
+                    <img class="img-responsive, center-block" src="images/pranava.jpg" alt="">
+
+                </div>
+                <div class="item ">
+
+                    <img class="img-responsive, center-block" src="images/priya.jpg" alt="">
+
+                </div>
+                <div class="item ">
+
+                    <img class="img-responsive, center-block" src="images/tungoe.jpg" alt="">
+
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Speakers -->
+
+        <!--page content-->
+        <div class="container-wrapper">
+            <div class="container">
+                <p class="p1" data-aos="zoom-in" data-aos-duration="1000">WELCOME TO TEDx OSMANIAU!</p>
+                <p class="p2" data-aos="zoom-in" data-aos-duration="1500">TEDxOsmaniaU is a local, independently
+                    organized TEDx event in Hyderabad, India, that strives to re-create the unique experience found at
+                    TED. At its core, the fundamental goal is to foster "Ideas worth spreading". Our aim is to provide
+                    a platform where thinkers and change makers co-inspire to question the way we think.<span
+                        id="dots3"></span>
+                    </span><button onclick="myFunction3()" id="myBtn3">Read more</button></p>
+
+                <!-- Buy tickets section 1-->
+
+
+                <!-- Speakers -->
+
+
+                <section class="fdb-block">
+                    <div class="speaker">
+                        <p class="p1" style="padding:20px;" data-aos="zoom-in" data-aos-duration="1000">MEET THE
+                            SPEAKERS!</p>
+                        <div data-aos="flip-up" data-aos-duration="1000"
+                            style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;"
+                            class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    Keep Guessing!
+                                </p>
+
+                                <!-- <p class="lead"><strong> Name</strong> <em class="ml-4">Company</em></p> -->
+                                <hr>
+                                <p><a href="#">read more</a></p>
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="./images/speakerMale.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="fdb-block">
+                    <div class="speakerr">
+                        <div data-aos="flip-right" data-aos-duration="1000"
+                            style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;"
+                            class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    Keep Guessing!
+                                </p>
+
+                                <!-- <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p> -->
+                                <hr>
+                                <p><a href="#">read more</a></p>
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="./images/speakerFemale.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="fdb-block">
+                    <div class="speaker">
+                        <div data-aos="flip-down" data-aos-duration="1000"
+                            style="padding: 20px;border-style: solid double; border-color: red; border-radius:100px;"
+                            class="row align-items-center justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <p class="lead">
+                                    Keep Guessing!
+                                </p>
+
+                                <!-- <p class="lead"><strong>Name</strong> <em class="ml-4">Company</em></p> -->
+                                <hr>
+                                <p><a href="#">read more</a></p>
+
+                            </div>
+                            <div class="col-8 col-sm-6 col-md-2 col-lg-3 col-xl-2 mt-4 mt-md-0 ml-auto mr-auto mr-md-0">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="./images/speakerMale.png">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel1" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item ">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!--Team-->
+
+
+                <section style="padding-bottom: 100px;" class="fdb-block team-5">
+                    <div class="team">
+                        <div class="row text-center justify-content-center">
+                            <div class="col-8">
+                                <p class="p1" data-aos="zoom-in" data-aos-duration="1000">MEET THE TEAM</p>
+                            </div>
+                        </div>
+
+                        <div class="row"></div>
+
+                        <div class="row text-center justify-content-center mb-5">
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/md.jpg">
+
+                                <h5><strong>MOHAMMED ALI HASSAN</strong></h5>
+                                <p>MANAGING DIRECTOR</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/co1.jpg">
+
+                                <h5><strong>SAI PRAJESH PATTA</strong></h5>
+                                <p>CO-ORGANIZER</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/co-2.JPG">
+
+                                <h5><strong>DHEEERAJ DHANVEE KAIRAMKONDA</strong></h5>
+                                <p>CO-ORGANIZER</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/th1.jpg">
+
+                                <h5><strong>IQBAL AHMED</strong></h5>
+                                <p>TECHNICAL</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/oh-1.jpg">
+
+                                <h5><strong>DANISH SHOWKAT</strong></h5>
+                                <p>OPERATIONS</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/l-1.jpg">
+
+                                <h5><strong>SREE CHARAN RAJ</strong></h5>
+                                <p>LOGISTICS</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/p1.png">
+
+                                <h5><strong>SHREYA REDDY KOTHA</strong></h5>
+                                <p>PRODUCTIONS</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/ac1.png">
+
+                                <h5><strong>MANASWINI KYATHAM</strong></h5>
+                                <p>ARTS AND CRAFTS</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/e1.png">
+
+                                <h5><strong>RAJYASHRI RAGI</strong></h5>
+                                <p>EDITORIAL</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/sm1.jpg">
+
+                                <h5><strong>K.MANASWEE REDDY</strong></h5>
+                                <p>SPEAKER MANAGEMENT</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 m-sm-auto">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/m1.jpg">
+
+                                <h5><strong>K.SREE CHANDANA</strong></h5>
+                                <p>MARKETING</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 ">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/th2.jpg">
+
+                                <h5><strong>MOHAMMED HABEEBBUL IMRAN</strong></h5>
+                                <p>WEB DEVELOPMENT</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 ">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/tre-2.jpg">
+
+                                <h5><strong>YASHWANTH MACHIRAJU</strong></h5>
+                                <p>TREASURER</p>
+                            </div>
+
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-sm-4 ">
+                                <img alt="image" class="img-circle img-responsive person"
+                                    src="../teampage/images/tre-1.png">
+
+                                <h5><strong>PUTTAPARTHI UDBHAV SAI</strong></h5>
+                                <p>TREASURER</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row text-center justify-content-center mb-5">
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                                <img alt="image" style="height: 25em;" class="img-circle img-responsive person" src="">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+                            <div data-aos="flip-down" data-aos-duration="1000" class="col-xl-6 col-lg-6 col-md-6 col-sm-4 ">
+                                <img alt="image" style="height: 25em;" class="img-circle img-responsive person" src="">
+
+                                <h3><strong>Sara Doe</strong></h3>
+                                <p>"Wild Question Marks, but the Little Blind"</p>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </section>
+
+
+                <!-- Buy tickets section 2 -->
+                <p class="p1" data-aos="zoom-out" data-aos-duration="1000">BUY THE TICKETS!</p>
+
+                <section class="hero h-100">
+                    <div data-aos="flip-left" data-aos-duration="1000" class="h-100 py-5">
+                        <div class="row h-100 justify-content-between align-items-center">
+                            <div class="col-lg-5 h-50">
+                                <div class="d-flex flex-column h-100 justify-content-between text-center text-lg-left">
+                                    <p class="p1" data-aos="zoom-in" data-aos-duration="1000">What Are You Waiting For??
+                                    </p>
+                                    <h1 class="p1">
+                                        Get the tickets asap !!
+                                    </h1>
+                                    <h5 class="text-muted font-weight-normal">
+                                        Early bird gets 10% off !!
+                                    </h5>
+                                    <div>
+                                        <button style="border-radius:20px;" class="btn btn-danger"
+                                            onclick="btnFunction()">
+                                            Buy Tickets <span class="popuptext" id="myPopup">Registrations will be open
+                                                soon!</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="flip-right" data-aos-duration="1000" class="col-lg-5 mt-3 mt-lg-0">
+                                <img src="images/pay2.svg" class="h-100 w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--footer-->
+
+
+                <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+                    <div class="container">
+                        <div class="row align-items-top text-left ">
+                            <div class="col-12 col-sm-6 col-md-3">
+                                <h3><strong>Address</strong></h3>
+                                <p>Osmania University<br>Hyderabad<br>India</p>
+                                <p>Email:tedxou@gmail.com</p>
+                                <p>+91 8106302612</p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                                <h3><strong>Programs& initiatives</strong></h3>
+                                <a href="https://www.ted.com/">
+                                    <p>TEDx</p>
+                                </a>
+                                <a href="https://www.ted.com/participate/ted-fellows-program">
+                                    <p>TEDx Fellows</p>
+                                </a>
+                                <a href="https://www.ted.com/watch/ted-ed">
+                                    <p>TED ed</p>
+                                </a>
+                                <a href="https://www.ted.com/participate/translate">
+                                    <p>TED Translators</p>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                <h3><strong>2023 Archive</strong></h3>
+                                <a href="../Gallery/gallery.html">
+                                    <p>Gallery</p>
+                                </a>
+                                <a href="../sponsorsss/spon.html">
+                                    <p>Sponsers</p>
+                                </a>
+                                <a href="../teampage/TeamPage.html">
+                                    <p>Organizers</p>
+                                </a>
+                                <a href="../contactUs/contact_us.html">
+                                    <p>Contact Us</p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                                <h3><strong>Reach Us</strong></h3>
+                                <a>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.103855353357!2d78.51853520000003!3d17.40680289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f886defc7%3A0xadc58ab3b9104ad7!2sCollege%20of%20Engineering%20Osmania%20University!5e0!3m2!1sen!2sin!4v1679133552855!5m2!1sen!2sin"
+                                        width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <ul  class="wrapper">
+                        <a style="color:black" href="https://www.facebook.com/tedxosmaniau">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fa fa-facebook"></i></span>
+                        </li></a>
+                        <a style="color:black" href="https://www.linkedin.com/in/tedx-osmaniau-a90080213/?originalSubdomain=in">
+                        <li class="icon twitter">
+                            <span class="tooltip">LinkedIn</span>
+                            <span><i class="fa fa-linkedin"></i></span>
+                        </li>
+                        </a>
+                        <a style="color:black" href="https://www.facebook.com/tedxosmaniau">
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fa fa-instagram"></i></span>
+                        </li>
+                        </a>
+                        <a style="color:black" href="https://www.facebook.com/tedxosmaniau">
+                        <li class="icon github">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fa fa-twitter"></i></span>
+                        </li>
+                        </a>
+                        <a style="color:black" href="https://www.facebook.com/tedxosmaniau">
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fa fa-youtube"></i></span>
+                        </li>
+                        </a>
+                    </ul>
+                </footer>
+
+                <footer class="footer2">
+                    <a href="">Ted Talks Usage Policy</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Advertising/Partnership</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Jobs</a>
+                    <a href="">Press</a>
+                    <a href="">Help</a>
+                    <a href="">Membership</a>
+                    <p>&copy; TedConference,LLC.All Rights reserved </p>
+                </footer>
+
+
+
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        // Initialize Tooltip
+                        $('[data-toggle="tooltip"]').tooltip();
+                    })
+                    AOS.init()
+
+                    function myFunction3() {
+                        var dots3 = document.getElementById("dots3");
+                        var moreText3 = document.getElementById("more3");
+                        var btnText3 = document.getElementById("myBtn3");
+
+                        if (dots3.style.display === "none") {
+                            dots3.style.display = "inline";
+                            btnText3.innerHTML = "Read more";
+                            moreText3.style.display = "none";
+                        } else {
+                            dots3.style.display = "none";
+                            btnText3.innerHTML = "Read less";
+                            moreText3.style.display = "inline";
+                        }
+                    }
+                    $("#menu-toggle").click(function (e) {
+                        e.preventDefault();
+                        $("#wrapper").toggleClass("toggled");
+                    });
+                </script>
+                <script type="text/javascript">
+                    if (screen.width <= 699) {
+                        let merch = document.getElementById("myCarousel1");
+                        merch.innerHTML = `<ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                            </ol>
+                
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <picture>
+                                        <img src="images/merch.png" class="img-responsive, center-block" alt="">
+                                    </picture>
+                                </div>
+                
+                                <div class="item ">
+                
+                                    <img class="img-responsive, center-block" src="images/merch.png" alt="">
+                
+                                </div>
+                
+                            </div>
+                
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>`
+                    }
+                </script>
+            </div>
+</body>

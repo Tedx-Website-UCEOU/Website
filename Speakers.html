@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Speakers</title>
+    <link rel="stylesheet" href="Speakers.css">
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 7rem;
+            background: black;
+            font-family: sans-serif;
+        }
+        
+        .navbar {
+            letter-spacing: 4px;
+            background-color: white;
+            color: orange;
+            min-height: 80px;
+        }
+        
+        .navbar-header button {
+            margin: 0;
+            padding: 24px;
+        }
+        
+        .navbar li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media screen and (max-width: 350px) {
+            .navbar-collapse {
+                margin-top: 10px;
+            }
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: black;
+            font-size: 14px;
+            line-height: 4;
+            padding-top: -15em;
+        }
+        
+        .navbar-nav li a:hover {
+            color: #000000 !important;
+        }
+        
+        .navbar-nav li.active a {
+            color: #000000 !important;
+        }
+        
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+        
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+        
+        .dropdown-menu li a:hover {
+            background-color: rgb(83, 81, 81) !important;
+            color: white !important;
+        }
+        
+        .readmore {
+            color: rgb(93, 93, 241);
+        }
+        
+        .navbar-toggle .icon-bar {
+            color: blue;
+            border-color: transparent;
+        }
+        
+        .nav li a {
+            margin: 0px 10px;
+        }
+        #btnbuy{
+    border-color: rgb(255, 2, 2);
+    color: #ffffff;
+    box-shadow: 0 0 40px 40px rgb(254, 65, 65) inset, 0 0 0 rgb(248, 102, 102);
+    transition: all 150ms ease-in-out;
+    padding: 14px 28px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+}
+#btnbuy:hover {
+      box-shadow: 0 0 10px 0 rgb(235, 39, 55) inset, 0 0 10px 4px rgb(243, 33, 61);
+      color:#f41a1a
+    }
+        .navbar .navbar-brand {
+            margin-top: -0.45rem;
+        }
+        
+        @media screen and (min-width:279px) and (max-width:410px) {
+            .navbar-header {
+                display: flex;
+                margin-left: -12rem;
+            }
+            .navbar-header .logo {
+                margin-left: -3rem;
+            }
+            .navbar-header button {
+                padding-left: 0px;
+                margin-left: 0px;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) and (max-width: 1024px) {
+            .nav li a {
+                margin: 0px;
+            }
+            .navbar-nav>li>a {
+                padding: 15px 10px;
+            }
+        }
+        
+        .navbar-fixed-top .navbar-collapse {
+            max-height: 400px;
+        }
+        /**/
+        
+        .header {
+            color: black;
+            text-align: center;
+            font-weight: 900;
+            font-size: 3.8em;
+        }
+        
+        .header .letter {
+            margin-top: 30px;
+            font-family: sans-serif;
+            color: red;
+            display: inline-block;
+            line-height: 1em;
+        }
+        
+        .container {
+            justify-content: center;
+            margin: 20px auto 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .container .box {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: white;
+            margin: 50px;
+            box-sizing: border-box;
+            display: inline-block;
+            box-shadow: 0 0 20px red;
+        }
+        
+        .container .box .imgbox {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container .box .imgbox img {
+            min-width: 100%;
+            transition: transform 1s;
+        }
+        
+        .container .box:hover .imgbox img {
+            transform: scale(1.2);
+        }
+        
+        .container .box .details {
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            transform: scaleY(0);
+            transition: transform .5s;
+        }
+        
+        .container .box:hover .details {
+            transform: scaleY(1);
+        }
+        
+        .container .box .details .content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+        
+        .container .box .details .content h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .container .box .details .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+        
+        hr {
+            height: 1px;
+            width: 96%;
+            margin-right: 2%;
+            margin-left: 2%;
+            background-color: #fc2b2b;
+            border-top: 1px #fc2b2b;
+        }
+        /* footer start */
+        
+        .footer-container {
+            position: relative;
+            height: fit-content;
+            text-align: center;
+            padding-top: 0;
+            color: #fff;
+            background-color: #1a1a1a;
+            background-color: rgba(0, 0, 0, 0.9);
+            width: 100%;
+            padding: 45px;
+            font-size: medium;
+        }
+        
+        footer {
+            background-color: #2d2d30;
+            color: #f5f5f5;
+            position: relative;
+            display: flex;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 10px 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 1em;
+        }
+        
+        .footer2 {
+            margin-top: 5px;
+            padding: 10px 50px;
+            background: rgb(24, 24, 24);
+            color: aliceblue;
+            display: flex;
+            width: 96%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding: 10px 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            font-size: 1em;
+        }
+        
+        
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #FC2B2B;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FC2B2B;
+    border-radius: 20px;
+}
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    transform: translateX(70%);
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #ffffff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #08649e;
+    color: #ffffff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #de1077;
+    color: #ffffff;
+  }
+  
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+    background: #3dc5fe;
+    color: #ffffff;
+  }
+  
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #f92b2b;
+    color: #ffffff;
+  }
+    </style>
+    <script>
+        function fun() {
+            var textWrapper = document.querySelector('.header');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: '.header .letter',
+                    scale: [4, 1],
+                    opacity: [0, 1],
+                    translateZ: 0,
+                    easing: "easeOutExpo",
+                    duration: 950,
+                    delay: (el, i) => 70 * i
+                }).add({
+                    targets: '.header',
+                    opacity: 0,
+                    duration: 10000000000000000000000000000000000000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+        }
+
+        function abc(id) {
+            document.querySelectorAll(".T").forEach(function(div) {
+                if (div.id == id)
+                    div.style.display = div.style.display == "none" ? "block" : "none";
+                else
+                    div.style.display = "none";
+            });
+        }
+    </script>
+</head>
+
+<body onload="fun()">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./homepage/home.html"><img src="./homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="../Events/events.html">EVENTS</a></li> -->
+                    <li><a href="../homepage/home.html">HOME</a></li>
+                    <li><a href="../Speakers.html">SPEAKERS</a></li>
+                    <li><a href="../sponsorsss/spon.html">SPONSORS</a></li>
+                    <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+                    <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                    <li>
+                        <div class="buy" style="position:relative;-ms-transform: translateY(25%);
+                        transform: translateY(32%) translateX(0%);margin: 0;top: 100%;border-radius: 25px"><button
+                                id="btnbuy" onclick="btnFunction()">BUY TICKETS</button></div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="header">
+        <p>Our Speakers</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <div class="container">
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S1')">
+                <div class="content" onclick="abc('S1')">
+                    <h2>Name1</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S1" class="T" style="display:none;color: white;">
+                <p>Info about speaker 1</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S2')">
+                <div class="content" onclick="abc('S2')">
+                    <h2>Name2</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S2" class="T" style="display:none;color: white;">
+                <p>Info about speaker 2</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S3')">
+                <div class="content" onclick="abc('S3')">
+                    <h2>Name3</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S3" class="T" style="display:none;color: white;">
+                <p>Info about speaker 3</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S4')">
+                <div class="content" onclick="abc('S4')">
+                    <h2>Name4</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S4" class="T" style="display:none;color: white;">
+                <p>Info about speaker 4</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S5')">
+                <div class="content" onclick="abc('S5')">
+                    <h2>Name5</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S5" class="T" style="display:none;color: white;">
+                <p>Info about speaker 5</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S6')">
+                <div class="content" onclick="abc('S6')">
+                    <h2>Name6</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S6" class="T" style="display:none;color: white;">
+                <p>Info about speaker 6</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="Image.jpg">
+            </div>
+            <div class="details" onclick="abc('S7')">
+                <div class="content" onclick="abc('S7')">
+                    <h2>Name7</h2>
+                    <p>Profession</p>
+                </div>
+            </div>
+            <div id="S7" class="T" style="display:none;color: white;">
+                <p>Info about speaker 7</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--footer-->
+
+
+    <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+        <div class="footer-container">
+            <div class="row align-items-top text-left ">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3><strong>Address</strong></h3>
+                    <p>Osmania University<br>Hyderabad<br>India</p>
+                    <p>Email:tedxou@gmail.com</p>
+                    <p>+91 8106302612</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                    <h3><strong>Programs& initiatives</strong></h3>
+                    <a href="https://www.ted.com/">
+                        <p>TEDx</p>
+                    </a>
+                    <a href="https://www.ted.com/participate/ted-fellows-program">
+                        <p>TEDx Fellows</p>
+                    </a>
+                    <a href="https://www.ted.com/watch/ted-ed">
+                        <p>TED ed</p>
+                    </a>
+                    <a href="https://www.ted.com/participate/translate">
+                        <p>TED Translators</p>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                    <h3><strong>2023 Archive</strong></h3>
+                    <a href="../Gallery/gallery.html">
+                        <p>Gallery</p>
+                    </a>
+                    <a href="../sponsorsss/spon.html">
+                        <p>Sponsers</p>
+                    </a>
+                    <a href="../teampage/TeamPage.html">
+                        <p>Organizers</p>
+                    </a>
+                    <a href="../contactUs/contact_us.html">
+                        <p>Contact Us</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                    <h3><strong>Reach Us</strong></h3>
+                    <a>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.103855353357!2d78.51853520000003!3d17.40680289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f886defc7%3A0xadc58ab3b9104ad7!2sCollege%20of%20Engineering%20Osmania%20University!5e0!3m2!1sen!2sin!4v1679133552855!5m2!1sen!2sin"
+                            width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="social">
+            <ul style="color:black" class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fa fa-facebook"></i></span>
+                </li>
+                <li class="icon twitter">
+                    <span class="tooltip">LinkedIn</span>
+                    <span><i class="fa fa-linkedin"></i></span>
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fa fa-instagram"></i></span>
+                </li>
+                <li class="icon github">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fa fa-twitter"></i></span>
+                </li>
+                <li class="icon youtube">
+                    <span class="tooltip">Youtube</span>
+                    <span><i class="fa fa-youtube"></i></span>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+    </footer>
+
+    <footer class="footer2">
+        <a href="">Ted Talks Usage Policy</a>
+        <a href="">Privacy policy</a>
+        <a href="">Advertising/Partnership</a>
+        <a href="">Terms of Use</a>
+        <a href="">Jobs</a>
+        <a href="">Press</a>
+        <a href="">Help</a>
+        <a href="">Membership</a>
+        <p>&copy; TedConference,LLC.All Rights reserved </p>
+    </footer>
+
+</body>
+
+</html>

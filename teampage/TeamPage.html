@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Team TEDx</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./TeamPage_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sponsors_style.css">
+    <script>
+        function fun() {
+            var textWrapper = document.querySelector('.header');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: '.header .letter',
+                    scale: [4, 1],
+                    opacity: [0, 1],
+                    translateZ: 0,
+                    easing: "easeOutExpo",
+                    duration: 950,
+                    delay: (el, i) => 70 * i
+                }).add({
+                    targets: '.header',
+                    opacity: 0,
+                    duration: 10000000000000000000000000000000000000,
+                    easing: "easeOutExpo",
+                    delay: 100
+                });
+        }
+    </script>
+</head>
+
+<script type="text/javascript">
+    if (screen.width <= 699) {
+        document.location = "Teams_Mobile.html";
+    }
+</script>
+
+<body onload="fun()">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="../Events/events.html">EVENTS</a></li> -->
+                    <li><a href="../homepage/home.html">HOME</a></li>
+                    <li><a href="../Speakers.html">SPEAKERS</a></li>
+                    <li><a href="../sponsorsss/spon.html">SPONSORS</a></li>
+                    <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+                    <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                    <li>
+                        <div class="buy" style="position:relative;-ms-transform: translateY(25%);
+                        transform: translateY(32%) translateX(0%);margin: 0;top: 100%;border-radius: 25px"><button
+                                id="btnbuy" onclick="btnFunction()">BUY TICKETS</button></div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="header">
+        <h1>Team TEDx</h1><br></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="team">
+                    <!-- Management-->
+                    <li>
+                        <div class="image" id="t1">
+                            <img class="img-responsive img-circle " src="m-d.png" id="sm">
+                        </div>
+                        <div class="panel" id="t1">
+                            <div class="heading">
+                                <h3>Managing Director</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="speakers" class="modal">
+                            <div class="modal-content one">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="newData" style="font-size: 32px; color: black; margin-bottom: 20px;"><b>MANAGEMENT TEAM</b></p>
+                                    <div class="row">
+                                        <div class="one column1 col-12">
+                                            <div class="card single">
+                                                <img class="image-1 one" src="images/md.jpg" style="width:100%">
+                                                <div class="con">
+                                                    <h4 style="margin-top:0;">MOHAMMED ALI HASSAN</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Promotions-->
+                    <li class="team-inverted">
+                        <div class="image" id="t2">
+                            <img class="img-responsive img-circle" src="Promotions.jpg" id="pm">
+                        </div>
+                        <div class="panel" id="t2">
+                            <div class="heading">
+                                <h3>Promotions Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="promotions" class="modal">
+                            <div class="two modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="two newData" style="font-size: 32px;color: black;"><b>PROMOTIONS TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two card left">
+                                                <img class="two image-1" src="./images/m1.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>K Sree Chandana</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column2 col-md-6">
+                                            <div class="two card right">
+                                                <img class="two  image-2" src="./images/m2.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>Khaja Shereen</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list">
+                                            <li>Surya Shashank Shekar</li>
+                                            <li>Supraja Ravva</li>
+                                            <li>Nasrullah Khan</li>
+                                            <li>Yerravally Manish</li>
+                                            <li>Areeba Tanayeem</li>
+                                            <li>B.Siri</li>
+                                            <li>Sai Sree</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Sponsorship-->
+                    <li>
+                        <div class="image" id="t3">
+                            <img class="img-responsive img-circle" src="Sponsorship.jpg" id="sp">
+                        </div>
+                        <div class="panel" id="t3">
+                            <div class="heading">
+                                <h3>Sponsorship Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="sponsorship" class="modal">
+                            <div class="modal-content one">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="sp newData one" style="font-size: 32px;color: black;"><b>SPONSORSHIP TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two card left">
+                                                <img class="two image-1" src="images/co1.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>SAI PRAJESH PATTA</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column2 col-md-6">
+                                            <div class="two card right">
+                                                <img class="two image-2" src="images/sponser.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>SAKINA HYDER</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list">
+                                            <li>Talat Madiha</li>
+                                            <li>Arpita Lonakadi</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Technical-->
+                    <li class="team-inverted">
+                        <div class="image" id="t4">
+                            <img class="img-responsive img-circle" src="Technical1.jpg" id="t">
+                        </div>
+                        <div class="panel" id="t4">
+                            <div class="heading">
+                                <h3>Technical Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="technical" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="newData" style="font-size: 32px;color: black;"><b>TECHNICAL TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 ">
+                                            <div class="card single">
+                                                <img class="image-1" src="images/th1.jpg" style="width:100%">
+                                                <div class="con">
+                                                    <h4>IQBAL AHMED</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list">
+                                            <li>T.Sri Vasista</li>
+                                            <li>Akash</li>
+                                            <li>Mohammed Hussain Shaik</li>
+                                            <li>GNV Shiva Prasad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Productions-->
+                    <li>
+                        <div class="image" id="t5">
+                            <img class="img-responsive img-circle" src="Production.jpg" id="pd">
+                        </div>
+                        <div class="panel" id="t5">
+                            <div class="heading">
+                                <h3>Productions Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="productions" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="two newData" style="font-size: 32px;color: black;"><b>PRODUCTIONS TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two card left">
+                                                <img class="two image-1" src="images/p1.png" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>SHREYA REDDY KOTHA</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column2 col-md-6">
+                                            <div class="two card right">
+                                                <img class="two image-2" src="images/ph-2.JPG" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>L.SAI BHARADWAJ</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list">
+                                            <li>C.Vivek Vardhan</li>
+                                            <li>Saketh</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Editorial-->
+                    <li class="team-inverted">
+                        <div class="image" id="t6">
+                            <img class="img-responsive img-circle" src="Editorial.png" id="e">
+                        </div>
+                        <div class="panel" id="t6">
+                            <div class="heading">
+                                <h3>Editorial Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="editorial" class="modal">
+                            <div class="two modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="two newData" style="font-size: 32px;color: black; "><b>EDITORIAL TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two  card left">
+                                                <img class="two  image-1" src="images/e1.png" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>RAJSHRI RAGI</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column2 col-md-6">
+                                            <div class="two  card right">
+                                                <img class="two  image-2" src="images/e2.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>HITAISHI SAI G</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list">
+                                            <li>Masrrat Fatma Khan</li>
+                                            <li>Mohammud Wajeehuddin</li>
+                                            <li>Arfath Khan</li>
+                                            <li>Sri Medha Joolori</li>
+                                            <li>Tanmai Alaham</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Speaker Management -->
+                    <li>
+                        <div class="image" id="t7">
+                            <img class="img-responsive img-circle" src="Speaker.jpg" id="man">
+                        </div>
+                        <div class="panel" id="t7">
+                            <div class="heading">
+                                <h3> Speaker Management Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div class="line"></div>
+                        <div id="manage" class="modal">
+                            <div class="two modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="two newData" style="font-size: 32px;color: black; "><b>MANAGING TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two card left">
+                                                <img class="two image-1" src="images/sm1.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>K.MANASWEE REDDY</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column2 col-md-6">
+                                            <div class="two card right">
+                                                <img class="two image-2" src="images/sm2.jpg" style="width:100%">
+                                                <div class="two con ">
+                                                    <h4>SAIKA BEERVAL</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1" style="font-size: 20px;">Team Members</p>
+                                        <ul class="list">
+                                            <li>T.Shanmukh</li>
+                                            <li>Purujit Kumar</li>
+                                            <li>Munnaluru Akhila</li>
+                                            <li>Krishna Hasitha</li>
+                                            <li>M.Pranav Teja</li>
+                                            <li>D.Jayashree</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!--Website Development-->
+                    <li class="team-inverted">
+                        <div class="image" id="t8">
+                            <img class="img-responsive img-circle" src="Website.png" id="w">
+                        </div>
+                        <div class="panel" id="t8">
+                            <div class="heading">
+                                <h3>Website Development Team</h3>
+                                <!-- <h4 class="subheading">Subtitle</h4> -->
+                            </div>
+                            <!-- <div class="team-body">
+                                <p class="info">Some info...</p>
+                            </div> -->
+                        </div>
+                        <div id="website" class="modal">
+                            <div class="two modal-content">
+                                <span class="close">&times;</span>
+                                <div class="new">
+                                    <p class="two newData" style="font-size: 32px;color: black; "><b>WEBSITE DEVELOPMENT TEAM</b></p>
+                                    <div class="row">
+                                        <div class="column1 col-md-6">
+                                            <div class="two card left">
+                                                <img class="two image-1" src="images/md.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4>MOHAMMED ALI HASSAN</h4>
+                                                    <p class="title">Head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="class=column2 col-md-6">
+                                            <div class="two card right">
+                                                <img class="two image-2" src="images/th2.jpg" style="width:100%">
+                                                <div class="two con">
+                                                    <h4 style="margin-top: 0;">MOHAMMED HABEEBBUL IMRAN</h4>
+                                                    <p class="title">Assistant head</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row nam" style="text-align: center;">
+                                        <p class="title1">Team Members</p>
+                                        <ul class="list" style="list-style-type: none;">
+                                            <li>A.Manisha</li>
+                                            <li>Y.Dharani</li>
+                                            <li>D.Akanksha</li>
+                                            <li>N.Vishwatej</li>
+                                            <li>Fasi H</li>
+                                            <li>B.Srinija</li>
+                                            <li>P.Manasa</li>
+                                            <li>K.Prasanna</li>
+                                            <li>E.Vishal</li>
+                                            <li>N.Pranavi</li>
+                                            <li>B.Prakhya</li>
+                                            <li>Roshan Eligati</li>
+                                            <li>Sai Moukthik Konduru</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <hr>
+                </ul>
+                    <!--footer-->
+            </div>
+        </div>
+    </div>
+                    <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+                        <div class="footer-container">
+                            <div class="row align-items-top text-left ">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <h3><strong>Address</strong></h3>
+                                    <p>Osmania University<br>Hyderabad<br>India</p>
+                                    <p>Email:tedxou@gmail.com</p>
+                                    <p>+91 8106302612</p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                                    <h3><strong>Programs& initiatives</strong></h3>
+                                    <a href="https://www.ted.com/">
+                                        <p>TEDx</p>
+                                    </a>
+                                    <a href="https://www.ted.com/participate/ted-fellows-program">
+                                        <p>TEDx Fellows</p>
+                                    </a>
+                                    <a href="https://www.ted.com/watch/ted-ed">
+                                        <p>TED ed</p>
+                                    </a>
+                                    <a href="https://www.ted.com/participate/translate">
+                                        <p>TED Translators</p>
+                                    </a>
+                                </div>
+            
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3><strong>2023 Archive</strong></h3>
+                                    <a href="../Gallery/gallery.html">
+                                        <p>Gallery</p>
+                                    </a>
+                                    <a href="../sponsorsss/spon.html">
+                                        <p>Sponsers</p>
+                                    </a>
+                                    <a href="../teampage/TeamPage.html">
+                                        <p>Organizers</p>
+                                    </a>
+                                    <a href="../contactUs/contact_us.html">
+                                        <p>Contact Us</p>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                                    <h3><strong>Reach Us</strong></h3>
+                                    <a>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.103855353357!2d78.51853520000003!3d17.40680289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f886defc7%3A0xadc58ab3b9104ad7!2sCollege%20of%20Engineering%20Osmania%20University!5e0!3m2!1sen!2sin!4v1679133552855!5m2!1sen!2sin"
+                                            width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </a>
+                                </div>
+            
+                            </div>
+                        </div>
+                            <ul style="color:black" class="wrapper">
+                                    <li class="icon facebook">
+                                        <span class="tooltip">Facebook</span>
+                                        <span><i class="fa fa-facebook"></i></span>
+                                    </li>
+                                    <li class="icon twitter">
+                                        <span class="tooltip">LinkedIn</span>
+                                        <span><i class="fa fa-linkedin"></i></span>
+                                    </li>
+                                    <li class="icon instagram">
+                                        <span class="tooltip">Instagram</span>
+                                        <span><i class="fa fa-instagram"></i></span>
+                                    </li>
+                                    <li class="icon github">
+                                        <span class="tooltip">Twitter</span>
+                                        <span><i class="fa fa-twitter"></i></span>
+                                    </li>
+                                    <li class="icon youtube">
+                                        <span class="tooltip">Youtube</span>
+                                        <span><i class="fa fa-youtube"></i></span>
+                                    </li>
+                                </ul>
+                        <br>
+                    </footer>
+
+                    <footer class="footer2">
+                        <a href="">Ted Talks Usage Policy</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Advertising/Partnership</a>
+                        <a href="">Terms of Use</a>
+                        <a href="">Jobs</a>
+                        <a href="">Press</a>
+                        <a href="">Help</a>
+                        <a href="">Membership</a>
+                        <p>&copy; TedConference,LLC.All Rights reserved </p>
+                    </footer>
+
+                    <script type="text/javascript">
+                        var speakers = document.getElementById("speakers");
+                        var promotions = document.getElementById("promotions");
+                        var sponsorship = document.getElementById("sponsorship");
+                        var technical = document.getElementById("technical");
+                        var productions = document.getElementById("productions");
+                        var editorial = document.getElementById("editorial");
+                        var manage = document.getElementById("manage");
+                        var website = document.getElementById("website");
+                        var tm1 = document.getElementById("t1");
+                        var tm2 = document.getElementById("t2");
+                        var tm3 = document.getElementById("t3");
+                        var tm4 = document.getElementById("t4");
+                        var tm5 = document.getElementById("t5");
+                        var tm6 = document.getElementById("t6");
+                        var tm7 = document.getElementById("t7");
+                        var tm8 = document.getElementById("t8");
+
+                        var sm = document.getElementById("sm");
+                        var pm = document.getElementById("pm");
+                        var sp = document.getElementById("sp");
+                        var t = document.getElementById("t");
+                        var pd = document.getElementById("pd");
+                        var e = document.getElementById("e");
+                        var w = document.getElementById("w");
+                        var man = document.getElementById("man");
+
+                        var span1 = document.getElementsByClassName("close")[0];
+                        var span2 = document.getElementsByClassName("close")[1];
+                        var span3 = document.getElementsByClassName("close")[2];
+                        var span4 = document.getElementsByClassName("close")[3];
+                        var span5 = document.getElementsByClassName("close")[4];
+                        var span6 = document.getElementsByClassName("close")[5];
+                        var span7 = document.getElementsByClassName("close")[6];
+                        var span8 = document.getElementsByClassName("close")[7];
+
+                        sm.onclick = function() {
+                            speakers.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+                        }
+                        pm.onclick = function() {
+                            promotions.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+                        sp.onclick = function() {
+                            sponsorship.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+                        t.onclick = function() {
+                            technical.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+
+                        pd.onclick = function() {
+                            productions.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+                        e.onclick = function() {
+                            editorial.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+                        man.onclick = function() {
+                            manage.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+
+                        w.onclick = function() {
+                            website.style.display = "block";
+                            tm1.style.display = "none";
+                            tm2.style.display = "none";
+                            tm3.style.display = "none";
+                            tm4.style.display = "none";
+                            tm5.style.display = "none";
+                            tm6.style.display = "none";
+                            tm7.style.display = "none";
+                            tm8.style.display = "none";
+
+                        }
+
+
+
+                        span1.onclick = function() {
+                            speakers.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+                            tm9.style.display = "block";
+
+                        }
+                        span2.onclick = function() {
+                            promotions.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+                        }
+                        span3.onclick = function() {
+                            sponsorship.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+                        span4.onclick = function() {
+                            technical.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+                        span5.onclick = function() {
+                            productions.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+                        span6.onclick = function() {
+                            editorial.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+                        span7.onclick = function() {
+                            manage.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+                        span8.onclick = function() {
+                            website.style.display = "none";
+                            tm1.style.display = "block";
+                            tm2.style.display = "block";
+                            tm3.style.display = "block";
+                            tm4.style.display = "block";
+                            tm5.style.display = "block";
+                            tm6.style.display = "block";
+                            tm7.style.display = "block";
+                            tm8.style.display = "block";
+
+                        }
+
+
+                        $('.modal').modal({
+                            backdrop: 'static', // This disable for click outside event
+                            keyboard: true // This for keyboard event
+                        })
+
+                        window.onclick = function(event) {
+                            if (event.target == speakers) {
+                                speakers.style.display = "none";
+                            } else if (event.target == promotions) {
+                                promotions.style.display = "none";
+                            } else if (event.target == sponsorship) {
+                                sponsorship.style.display = "none";
+                            } else if (event.target == technical) {
+                                technical.style.display = "none";
+                            } else if (event.target == productions) {
+                                productions.style.display = "none";
+                            } else if (event.target == editorial) {
+                                editorial.style.display = "none";
+                            } else if (event.target == website) {
+                                website.style.display = "none";
+                            } else if (event.target == manage) {
+                                manage.style.display = "none";
+                            }
+                        }
+                    </script>
+</body>
+
+</html>

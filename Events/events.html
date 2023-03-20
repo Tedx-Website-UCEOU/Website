@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Events</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="event_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        function fun() {
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: 'header',
+                    opacity: [0, 1],
+                    easing: "easeInOutQuad",
+                    duration: 3000,
+                    delay: (el, i) => 2 * (i + 1)
+                }).add({
+                    targets: 'header',
+                    opacity: 0,
+                    duration: 10000000000000000000000000000000000000,
+                    easing: "easeOutExpo",
+                    delay: 2
+                });
+
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: 'section',
+                    opacity: [0, 1],
+                    easing: "easeInOutQuad",
+                    duration: 8000,
+                    delay: (el, i) => 2 * (i + 1)
+                }).add({
+                    targets: 'section',
+                    opacity: 0,
+                    duration: 1000000000000000000000000000000000000,
+                    easing: "easeOutExpo",
+                    delay: 3
+                });
+        }
+    </script>
+</head>
+
+<body onload="fun()">
+    <div>
+
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                      </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../homepage/home.html">HOME</a></li>
+                        <li><a href="../Events/events.html">EVENTS</a></li>
+                        <li><a href="../Speakers.html">SPEAKERS</a></li>
+                        <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+
+                        <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+        </nav>
+
+        </div>
+
+        <header>
+            <div class="box">
+                <div>
+                    <ul>
+                        <li>August 8,2021</li>
+                        <li>9:00am - 9:00pm IST</li>
+                        <li>(UTC +5.5hrs)</li>
+                    </ul>
+                </div>
+                <div>Hyderabad,Telangana,India</div>
+                <div>This event is open to public</div>
+                <div></div>
+        </header>
+        <section>
+            <div class="flex-container">
+                <div class="one">
+                    vero numquam quaerat, dolor ipsum nam expedita placeat eveniet non aperiam tenetur officiis, asperiores hic assumenda at, voluptatum doloribus quasi. Earum delectus quam quas aliquid reiciendis commodi sequi vel unde dolores modi fugit, voluptatem facilis
+                    deserunt! Ad aliquid expedita minus delectus sint accusamus quam error quaerat odit, eos, quibusdam provident placeat assumenda iste harum eaque? Voluptate error temporibus deserunt eaque assumenda esse quasi possimus aspernatur tempore?
+                    Optio quia voluptate eligendi doloremque eaque quos eos deleniti nihil doloribus.
+                </div>
+                <div class="two">
+                    <iframe class="image" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4650.485588269988!2d78.52933701905948!3d17.414713704188518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9971c332ff21%3A0x33980780ee143660!2sTagore%20Auditorium!5e0!3m2!1sen!2sin!4v1618482506146!5m2!1sen!2sin"
+                        width="270" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div> Tagore Auditorium</div>
+                    <div>Osmania university</div>
+                    <div>Hyderabad,Telangana,500007</div>
+                    <div>India</div>
+                    <a href="#"> See more TedxOsmaniaU events</a>
+                </div>
+            </div>
+            <hr>
+
+            <section class="event-container">
+                <h2 class="event-title">EVENTS</h2>
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-name">EVENTNAME</div>
+                    </div>
+                    <div class="event-right">
+                        <div class="event-details">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur ducimus sed reprehenderit! Accusantium aspernatur ex nostrum. Consequatur possimus, architecto eum distinctio cumque magni officiis fugiat, facere quas rem voluptate?
+                        </div>
+                        <div class="time">
+                            <img src="time.png" alt="time-image">
+                            <p class="time-one">9:00am-10:00am</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-name">EVENTNAME</div>
+                    </div>
+                    <div class="event-right">
+                        <div class="event-details">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur ducimus sed reprehenderit! Accusantium aspernatur ex nostrum. Consequatur possimus, architecto eum distinctio cumque magni officiis fugiat, facere quas rem voluptate?
+                        </div>
+                        <div class="time">
+                            <img src="time.png" alt="time-image">
+                            <p class="time-one">10:00am-11:00am</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-name">EVENTNAME</div>
+                    </div>
+                    <div class="event-right">
+                        <div class="event-details">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur ducimus sed reprehenderit! Accusantium aspernatur ex nostrum. Consequatur possimus, architecto eum distinctio cumque magni officiis fugiat, facere quas rem voluptate?
+                        </div>
+                        <div class="time">
+                            <img src="time.png" alt="time-image">
+                            <p class="time-one">11:00am-01:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <hr class="line">
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-name">EVENTNAME</div>
+                    </div>
+                    <div class="event-right">
+                        <div class="event-details">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur ducimus sed reprehenderit! Accusantium aspernatur ex nostrum. Consequatur possimus, architecto eum distinctio cumque magni officiis fugiat, facere quas rem voluptate?
+                        </div>
+                        <div class="time">
+                            <img src="time.png" alt="time-image">
+                            <p class="time-one"> 02:00pm-03:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event">
+                    <div class="event-left">
+                        <div class="event-name">EVENTNAME</div>
+                    </div>
+                    <div class="event-right">
+                        <div class="event-details">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur ducimus sed reprehenderit! Accusantium aspernatur ex nostrum. Consequatur possimus, architecto eum distinctio cumque magni officiis fugiat, facere quas rem voluptate?
+                        </div>
+                        <div class="time">
+                            <img src="time.png" alt="time-image">
+                            <p class="time-one">03:00pm-05:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+            <div class="organizer">
+                <div class="two">
+                    <h1 class="red ">Organizing Team</h1>
+                </div>
+                <div class="two"><img class="image" src="Image.jpg" alt="organizer">
+                    <div>
+                        <h4>XYZ</h4>
+                    </div>
+                    <div class="info">Hyderabad,India</div>
+                </div>
+            </div>
+            <hr class="rule">
+            <!--footer-->
+
+
+            <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+                <div class="footer-container">
+                    <div class="row align-items-top text-left ">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <h3><strong>Address</strong></h3>
+                            <p>Osmania University<br>Hyderabad<br>India</p>
+                            <p>Email:tedxou@gmail.com</p>
+                            <p>+91 ##########</p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                            <h3><strong>Programs& initiatives</strong></h3>
+                            <a href="#">
+                                <p>TEDx</p>
+                            </a>
+                            <a href="#">
+                                <p>TEDx Fellows</p>
+                            </a>
+                            <a href="#">
+                                <p>TED ed</p>
+                            </a>
+                            <a href="">
+                                <p>TED Translators</p>
+                            </a>
+                        </div>
+
+                        <div class="col-12 col-md-3 mt-5 mt-md-0">
+                            <h3><strong>2019 Archive</strong></h3>
+                            <a href="#">
+                                <p>Gallery</p>
+                            </a>
+                            <a href="#">
+                                <p>Sponsers</p>
+                            </a>
+                            <a href="#">
+                                <p>Organizers</p>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                            <h3><strong>Our Community</strong></h3>
+                            <a href="#">
+                                <p>TED Fellows</p>
+                            </a>
+                            <a href="#">
+                                <p>TED Organizers</p>
+                            </a>
+                            <a href="#">
+                                <p>TED Translators</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="social">
+                    <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-instagram fa-3x"> </a>
+                    <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-facebook fa-3x"></a>
+                    <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-youtube fa-3x"> </a>
+                    <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-twitter fa-3x"> </a>
+                </div>
+                <br>
+
+            </footer>
+
+            <footer class="footer2">
+                <a href="">Ted Talks Usage Policy</a>
+                <a href="">Privacy policy</a>
+                <a href="">Advertising/Partnership</a>
+                <a href="">Terms of Use</a>
+                <a href="">Jobs</a>
+                <a href="">Press</a>
+                <a href="">Help</a>
+                <a href="">Membership</a>
+                <p>&copy; TedConference,LLC.All Rights reserved </p>
+            </footer>
+
+
+
+</body>
+
+</html>

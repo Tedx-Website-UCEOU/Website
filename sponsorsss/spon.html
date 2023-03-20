@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sponsors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sponsors_style.css">
+    <script type="text/javascript">
+        function fun() {
+            var textWrapper = document.querySelector('.our_sponsors');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            anime.timeline({
+                    loop: true
+                })
+                .add({
+                    targets: '.our_sponsors .letter',
+                    scale: [4, 1],
+                    opacity: [0, 1],
+                    translateZ: 0,
+                    easing: "easeOutExpo",
+                    duration: 950,
+                    delay: (el, i) => 70 * i
+                }).add({
+                    targets: '.our_sponsors',
+                    opacity: 0,
+                    duration: 10000000000000000000000000000000000000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                });
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body onload="fun()">
+
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="../Events/events.html">EVENTS</a></li> -->
+                    <li><a href="../homepage/home.html">HOME</a></li>
+                    <li><a href="../Speakers.html">SPEAKERS</a></li>
+                    <li><a href="../sponsorsss/spon.html">SPONSORS</a></li>
+                    <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+                    <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                    <li>
+                        <div class="buy" style="position:relative;-ms-transform: translateY(25%);
+                        transform: translateY(32%) translateX(0%);margin: 0;top: 100%;border-radius: 25px"><button
+                                id="btnbuy" onclick="btnFunction()">BUY TICKETS</button></div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="our_sponsors">
+        <p>Previous Sponsors</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <div class="sponsors">
+        <script>
+            AOS.init({
+                //easing:'ease-out-back';
+            });
+        </script>
+        <!-- <h3>Current Sponsors</h3> -->
+        <div class="my_box">
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#titleSpon" data-toggle="modal" href="#titleSpon"><img src="./titleSpon.jpg" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text">Title Sponsor</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#goldSpon" data-toggle="modal" href="#goldSpon"><img src="./goldSpon.jpg" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text">Gold Sponsor</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#outReachSpon" data-toggle="modal" href="#outReachSpon"><img src="./outReachSpon.jpg" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text" style="font-size: 1.5rem;">Out Reach Sponsor</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#outReachSpon" data-toggle="modal" href="#Spon1"><img src="./Logo_vssut.svg.png" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text" style="font-size: 1.5rem;">Sponser</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#outReachSpon" data-toggle="modal" href="#outReachSpon"><img src="./download (1).png" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text" style="font-size: 1.5rem;">Sponsor</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#outReachSpon" data-toggle="modal" href="#outReachSpon"><img src="./unnamed.jpg" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text" style="font-size: 1.5rem;">Media Sponsor</div>
+                </div>
+            </div>
+            <div class="my_container" data-aos="flip-up" data-aos-duration="1000">
+                <a data-target="#outReachSpon" data-toggle="modal" href="#outReachSpon"><img src="./ozone.jpg" class="imaga" alt="title sponsor" height=200 width=300></a>
+                <div class="overlay">
+                    <div class="text" style="font-size: 1.5rem;">Sponsor</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- Modals -->
+        <div class="modal" id="titleSpon" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Schools for India</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <p>Schools for India is embarking on a magnificent infrastructure building plan with the aim of providing the best schools for rural India, with facilities on par or superior to that of city schools for students from rural India.
+
+                    The high-end infrastructure will act as a catalyst for parents to send their
+                    children to school. Schools for India proposes to sponsor tuition, meals and uniforms to those children who require financial aid. For the underprivileged families and students,who cannot afford education at all Schools for India proposes to provide all the facilities and amenities free of cost.
+                    
+                    Schools for India firmly believes that availability of such amenities will ensure quicker admissions, higher school attendance and reduction in migration of students to cities.
+                    
+                    Schools for India was started in 2004 and registered as a Non profit
+                    Charitable Trust in India and as Non-Profit organization in USA.
+                    
+                    Schools for India is run by a team of professionals who have wide experience in planning and executing large turnkey projects across the globe.
+                    
+                    The trust has scores of volunteers, members and mentors who help in ensuring that the project is executed on time.</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a type="button" class="btn btn-danger" href="http://schoolsforindia.org/" target="_blank">Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="goldSpon" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Yellow Stone Media</h3>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <p>Incorporated in the year 2009, at Hyderabad, (Telangana, India), we “Yellow Stone Media” are recognized as the prominent trader and supplier of optimum quality range of Glow Sign Board, Display Hoarding, LED Board, Display Signages, Sign Boards, Neon Signs, Hanging Signs, Inflatable Balloons, Display Scroller, Demo Tents, Acrylic Table Top, Brochure Stands, Roll Up Standee, etc. “Yellow Stone Media” has established itself as a successful and prominent Advertising Agency. Yellow Stone Media Share nearly 35 years of Experience in Digital printing, Flex printing, Neon signs, Outdoor advertising, Glow sign boards, LED boards, Hoardings, Event management and Construction work. The effective advertising and creative solutions provided by our enterprise have helped us to emerge as a prominent Advertising agency in complete advertising solution. The provided products are procured from the trustworthy and certified vendors of the market with the support of skilled procuring agent. Additionally, we provide these products at rock bottom prices to the patrons within the promised time span.
+
+                    Yellow Stone Media Advertising and promotion are crucial and important for today's industry. They will determine the successfulness of the marketing plan. We are incorporated to meet customer's expectations and necessities in order to achieve brilliant results. We have our, passion, highly energy and experience marketing and production teams to provide the best quality products and services profitably in a competitive advertising and design environment. Our offered products are highly appreciated in the market due to their remarkable features such long functional life, impeccable functionality, optimum performance, highly luminous, brightness, ability to withstand adverse weather condition, alluring look, maintenance free, etc. Being a customer oriented enterprise, we make sure to offer our patrons optimum quality products as per their specific demands. Our vendors are chosen by our dexterous procuring agent on the basis of their market reputation, industry know-how, financial status, reliability and superiority of products. Because of our fair business ethics, timely delivery and crystal clear dealings, we have been able to set benchmarks in this domain. Our prompt delivery, quality-conscious policies and competitive pricing structure have enabled us to achieve a huge client base.
+                    
+                    Under the regulation of “Mr. Ramakrishna (Manager)”, we have attained a formidable place in this highly competitive market. His constant inspiration and dedication towards work has enabled us to muster numerous customers, throughout the world.</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a type="button" class="btn btn-danger" href="https://www.indiamart.com/yellowstone-media/" target="_blank">Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="outReachSpon" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Feevin Media</h3>
+                    <span class="close btn-close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <p>Feevin media is a DELHI based private ltd. Company aspiring to serve in publishing, printing and reproduction of recorded media activities across the country . It is India's leading college social media platform which caters to fests, events, internships, social media promotions, photography and a lot more !</p>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <a type="button" class="btn btn-danger" href="https://www.v6velugu.com/" target="_blank">Visit Website</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--footer-->
+
+
+        <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+            <div class="footer-container">
+                <div class="row align-items-top text-left ">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <h3><strong>Address</strong></h3>
+                        <p>Osmania University<br>Hyderabad<br>India</p>
+                        <p>Email:tedxou@gmail.com</p>
+                        <p>+91 8106302612</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                        <h3><strong>Programs& initiatives</strong></h3>
+                        <a href="https://www.ted.com/">
+                            <p>TEDx</p>
+                        </a>
+                        <a href="https://www.ted.com/participate/ted-fellows-program">
+                            <p>TEDx Fellows</p>
+                        </a>
+                        <a href="https://www.ted.com/watch/ted-ed">
+                            <p>TED ed</p>
+                        </a>
+                        <a href="https://www.ted.com/participate/translate">
+                            <p>TED Translators</p>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-3 mt-5 mt-md-0">
+                        <h3><strong>2023 Archive</strong></h3>
+                        <a href="../Gallery/gallery.html">
+                            <p>Gallery</p>
+                        </a>
+                        <a href="../sponsorsss/spon.html">
+                            <p>Sponsers</p>
+                        </a>
+                        <a href="../teampage/TeamPage.html">
+                            <p>Organizers</p>
+                        </a>
+                        <a href="../contactUs/contact_us.html">
+                            <p>Contact Us</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                        <h3><strong>Reach Us</strong></h3>
+                        <a>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.103855353357!2d78.51853520000003!3d17.40680289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f886defc7%3A0xadc58ab3b9104ad7!2sCollege%20of%20Engineering%20Osmania%20University!5e0!3m2!1sen!2sin!4v1679133552855!5m2!1sen!2sin"
+                                width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+                <ul style="color:rgb(0, 0, 0)" class="wrapper">
+                        <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fa fa-facebook"></i></span>
+                        </li>
+                        <li class="icon twitter">
+                            <span class="tooltip">LinkedIn</span>
+                            <span><i class="fa fa-linkedin"></i></span>
+                        </li>
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fa fa-instagram"></i></span>
+                        </li>
+                        <li class="icon github">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fa fa-twitter"></i></span>
+                        </li>
+                        <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fa fa-youtube"></i></span>
+                        </li>
+                    </ul>
+            <br>
+        </footer>
+
+        <footer class="footer2">
+            <a href="">Ted Talks Usage Policy</a>
+            <a href="">Privacy policy</a>
+            <a href="">Advertising/Partnership</a>
+            <a href="">Terms of Use</a>
+            <a href="">Jobs</a>
+            <a href="">Press</a>
+            <a href="">Help</a>
+            <a href="">Membership</a>
+            <p>&copy; TedConference,LLC.All Rights reserved </p>
+        </footer>
+        <script>
+            $('.close').click(function() {
+                $('.modal').modal('hide');
+            })
+        </script>
+</body>
+
+</html>

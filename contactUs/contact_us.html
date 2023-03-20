@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./contact_us_style.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md nav-inverse navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 5px;">
+                </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                          </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="../Events/events.html">EVENTS</a></li> -->
+                    <li><a href="../homepage/home.html">HOME</a></li>
+                    <li><a href="../Speakers.html">SPEAKERS</a></li>
+                    <li><a href="../sponsorsss/spon.html">SPONSORS</a></li>
+                    <li><a href="../teampage/TeamPage.html">TEAM</a></li>
+                    <li><a href="../contactUs/contact_us.html">CONTACT US</a></li>
+                    <li>
+                        <div class="buy" style="position:relative;-ms-transform: translateY(25%);
+                        transform: translateY(32%) translateX(0%);margin: 0;top: 100%;border-radius: 25px"><button
+                                id="btnbuy" onclick="btnFunction()">BUY TICKETS</button></div>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+
+    <div class="container" id="page-body">
+        <!--Faqs-->
+        <div class="row">
+            <div class="faq-wrapper">
+                <div class="faq-heading-wrapper">
+                    <img src="./contact_us.jpg" class="img-responsive faq-image" alt="Responsive image">
+                    <h1 id="faq-heading">Frequently Asked Questions</h1>
+                </div>
+                <div class="container">
+                    <div class="accordion" id="faq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is a TEDx event?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    A TEDx event is a local gathering where live TED-like talks and performances are shared with the community. TEDx events are fully planned and coordinated independently, on a community-by-community basis. The content and design of each TEDx event is unique
+                                    and developed independently, but all of them have features in common.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How do organisers ensure the success of virtual gatherings by hosting virtual TEDx event?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    Sharing powerful ideas does not need to be limited to in-person events. Virtual gatherings can engage your community in exciting new ways. Virtual events look to recreate and reimagine all the elements that make an in-person event special for an online
+                                    space. Virtual events can be hosted on any digital platform. There are specific formats and rules which need to be followed to lead the virtual TEDx. Virtual events do not have an attendee or viewer limit. Live streams/webcasts
+                                    may be hosted on any digital platform and may remain accessible on those platforms post-event.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How TEDx ensures the topics are bias free?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    A TEDx event is organized by volunteers from the local community, and just like TED events, it lacks any commercial, religious, or political agenda. Its goal is to spark conversation, connection, and community. All TEDx events present multiple issues
+                                    and a diversity of voices from many disciplines. After all, what’s the fun without a little variety?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    When to pre-record a talk, and when to host a virtual event?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    Virtual events are a great way to gather people, host discussion and premiere content.Virtual events further community connection for those who can attend at a particular time. Recording talks separately helps widen your audience even further. Streams
+                                    can have challenges in moderation, causing disruptions to individual talks. (Who is unmuted? Who entered late?). A talk goes further when you can hear and understand the message. Livestream audio is still developing,
+                                    but suitable cameras and microphones are quite widespread. Pre-recording a talk is best when trying to capture a distinct idea, rather than conversation.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What are the types of events which can be conducted by virtual TEDx?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    When you apply for a license to organize a TEDx event, you'll be asked to choose an event type. TEDx event types are exactly what they sound like: different kinds of TEDx events. Every TEDx event falls under one of these categories, and while all events
+                                    follow a very similar format, some different content, rules and audiences apply to each type of event. The events are Standard event, University event, Youth event, ED event, Salon event, TEDxLive event, TEDxWomen event,
+                                    Business event, Internal event, Library event.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Why should I attend the virtual event instead of just waiting for the videos to be released online?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faq">
+                                <div class="accordion-body">
+                                    While all of our speaker’s talks will eventually make it online, the live event will include content and interactive experiences that will only be made available via the live event, such as, audience interaction, live experiences, amongst others. We encourage
+                                    you to tune in for the live stream to get the full TEDx experience.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <!--Section heading-->
+            <h2 class="h2-responsive font-weight-bold text-center my-4 contact-heading">Contact us</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+
+
+            <!--Grid column-->
+            <form id="contact-form" class="form" name="contact-form" action="contact_us.php" method="POST">
+
+                <!--Grid row-->
+                <div class="form__fields">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-field text-field" placeholder="Please enter your name" required>
+                            <label for="name" class="o">Name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-5">
+                        <div class="md-form mb-0">
+                            <input type="email" id="email" name="email" class="form-field text-field" placeholder="Please enter your Email-ID" required>
+                            <label for="email" class="o">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="form__fields">
+
+                    <!--Grid column-->
+                    <div class="col-md-5">
+                        <div class="md-form mb-0">
+                            <input type="tel" id="phone" name="phone" class="form-field text-field" placeholder="Please enter your mobile number" required>
+                            <label for="phone" class="o">Mobile Number</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="1" class="form-field text-field" placeholder="Type any queries..(Max.char 500)" maxlength="500"></textarea>
+                            <label for="message" class="o">Message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+            <div class="status"></div>
+        </div>
+    </div>
+    <hr>
+    <!--footer-->
+
+
+    <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
+        <div class="footer-container">
+            <div class="row align-items-top text-left ">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <h3><strong>Address</strong></h3>
+                    <p>Osmania University<br>Hyderabad<br>India</p>
+                    <p>Email:tedxou@gmail.com</p>
+                    <p>+91 8106302612</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mt-4 mt-sm-0">
+                    <h3><strong>Programs& initiatives</strong></h3>
+                    <a href="https://www.ted.com/">
+                        <p>TEDx</p>
+                    </a>
+                    <a href="https://www.ted.com/participate/ted-fellows-program">
+                        <p>TEDx Fellows</p>
+                    </a>
+                    <a href="https://www.ted.com/watch/ted-ed">
+                        <p>TED ed</p>
+                    </a>
+                    <a href="https://www.ted.com/participate/translate">
+                        <p>TED Translators</p>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                    <h3><strong>2023 Archive</strong></h3>
+                    <a href="../Gallery/gallery.html">
+                        <p>Gallery</p>
+                    </a>
+                    <a href="../sponsorsss/spon.html">
+                        <p>Sponsers</p>
+                    </a>
+                    <a href="../teampage/TeamPage.html">
+                        <p>Organizers</p>
+                    </a>
+                    <a href="../contactUs/contact_us.html">
+                        <p>Contact Us</p>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 mt-7 mt-sm-0">
+                    <h3><strong>Reach Us</strong></h3>
+                    <a>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.103855353357!2d78.51853520000003!3d17.40680289999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb999f886defc7%3A0xadc58ab3b9104ad7!2sCollege%20of%20Engineering%20Osmania%20University!5e0!3m2!1sen!2sin!4v1679133552855!5m2!1sen!2sin"
+                            width="290" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+            <ul style="color:rgb(0, 0, 0)" class="wrapper">
+                    <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <span><i class="fa fa-facebook"></i></span>
+                    </li>
+                    <li class="icon twitter">
+                        <span class="tooltip">LinkedIn</span>
+                        <span><i class="fa fa-linkedin"></i></span>
+                    </li>
+                    <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <span><i class="fa fa-instagram"></i></span>
+                    </li>
+                    <li class="icon github">
+                        <span class="tooltip">Twitter</span>
+                        <span><i class="fa fa-twitter"></i></span>
+                    </li>
+                    <li class="icon youtube">
+                        <span class="tooltip">Youtube</span>
+                        <span><i class="fa fa-youtube"></i></span>
+                    </li>
+            </ul>
+        <br>
+    </footer>
+
+    <footer class="footer2">
+        <a href="">Ted Talks Usage Policy</a>
+        <a href="">Privacy policy</a>
+        <a href="">Advertising/Partnership</a>
+        <a href="">Terms of Use</a>
+        <a href="">Jobs</a>
+        <a href="">Press</a>
+        <a href="">Help</a>
+        <a href="">Membership</a>
+        <p class="copy-right">&copy; TedConference,LLC.All Rights reserved </p>
+    </footer>
+
+
+
+
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+
+</html>
